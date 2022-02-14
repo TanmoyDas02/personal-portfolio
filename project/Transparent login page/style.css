@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url('bg1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container{
+    color: white;
+    position: absolute;
+    top: 46%;
+    left: 44%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.container h1{
+    display: inline-block;
+    width: 103%;
+    font-size: 40px;
+    font-family: 'Acme', sans-serif;
+    border-bottom: 5px solid green;
+    margin-bottom: 15px;
+    padding: 15px 0;
+}
+
+.box{
+    width: 135%;
+    margin: 20px 0px;
+    border-bottom: 2px solid green;
+}
+
+.box input{
+    width: 80%;
+    background: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.box i{
+    width: 25px;
+    text-align: center;
+}
+
+.btn{
+    color: white;
+    cursor: pointer;
+    outline: none;
+    margin: 10px 0;
+    padding: 10px 21px;
+    border: 2px solid green;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Acme', sans-serif;
+    background: none;
+    font-weight: bold;
+}
+
+.btn:hover{
+    color: green;
+    background: pink;
+    opacity: 0.6;
+}

@@ -1,0 +1,446 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Titillium+Web&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: blanchedalmond;
+}
+.sidebar{
+    background-color: rgb(192, 187, 187);
+    /* width: 290px; */
+    height: 100vh;
+    font-family: 'Caveat', cursive;
+    position: absolute;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav{
+    padding: 80px;
+}
+
+.sidebar nav li{
+    list-style-type: none;
+    font-size: 30px;
+    padding: 30px 0px;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.sidebar nav li a:hover{
+    /* text-decoration: none; */
+    color: white;
+}
+
+
+.main{
+    /* background-color: yellow; */
+    width: 95vw;
+    padding: 25px;
+}
+.main-pm{
+    height: 55vh;
+    width: 80vw;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.container{
+    display: flex;
+}
+
+.infoContainer{
+    /* background-color: rgb(0, 17, 255); */
+    border: 2px solid black;
+    height: 55vh;
+    width: 75vw;
+    margin: 164px 180px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devpic img{
+    height: 30vh;
+    margin-top: 35%;
+}
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.3
+}
+
+.hello{
+    font-size: 65px;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+}
+.about{
+    font-size: 35px;
+}
+.moreabout{
+    font-size: 20px;
+    margin-top: 18px;
+}
+.buttons{
+    margin-top: 32px;
+}
+.btn{
+    padding: 9px 14px;
+    border-radius: 20px;
+    color: white;
+    background-color: turquoise;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.btn-sm{
+    border-radius: 20px;
+    color: white;
+    background-color: turquoise;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px 19px;
+    margin: 12px 0;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: turquoise;
+}
+.btn-sm:hover{
+    background-color: white;
+    color: turquoise;
+}
+
+/* contact page css */
+
+.contactform{
+    padding: 0 35px;
+    /* padding-top: 150px; */
+    font-family: 'Titillium Web', sans-serif;
+}
+.contactform h1{
+    text-align: center;
+    padding: 10px 0;
+    /* font-family: 'Caveat', cursive; */
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width: 30vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+#emailHelp{
+    font-size: 10px;
+    color: rgb(76, 197, 228);
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 40px;
+    margin: 7px 0;
+}
+#floatingTextarea{
+    width: 30vw;
+    height: 30vh;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.contactpic{
+    margin-top: 40%;
+}
+
+/* blog page css */
+
+.blogContainer, .blogContainer2{
+    display: flex;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px;
+}
+.header .profile{
+    height: 190px;
+    width: 190px;
+}
+.header h1{
+    font-size: 40px;
+}
+.blogItem{
+    /* background-color: green; */
+    margin: 32px 48px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.blogItem img{
+    height: 150px;
+    width: 150px;
+    text-align: center;
+}
+.blogItem h2, p{
+    padding: 12px 23px 6px 23px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* intro page css */
+
+.main h1{
+    text-align: center;
+    margin: 25px;
+    font-family: 'Titillium Web', sans-serif;
+    /* padding: auto; */
+}
+.skills-bar, .myproject, .aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 23px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.skills-bar{
+    margin: 0 0;
+}
+.skills-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.skills-bar .bar .info{
+    margin-bottom: 10px;
+}
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background-color: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 70%;
+}
+.progress-line.JavaScript span{
+    width: 50%;
+}
+.progress-line.python span{
+    width: 55%;
+}
+.progress-line.c span{
+    width: 75%;
+}
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+.bar .progress-line span::after{
+    position: absolute;
+    right: 0;
+    top: -26px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "70%";
+}
+.progress-line.JavaScript span::after{
+    content: "50%";
+}
+.progress-line.python span::after{
+    content: "55%";
+}
+.progress-line.c span::after{
+    content: "75%";
+}
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+} 
+.devinfo h2{
+    margin: 23px
+}
+.devintro{
+    margin-left: 23px;
+}
+.myproject ol{
+    margin-left: 50px;
+}
+.myproject ol li a{
+    display: flex;
+    flex-direction: row;
+    padding-left: 23px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    color: black;
+}
+.myproject ol li a span:hover{
+    color: #6665ee;
+    border-bottom: 2px solid #6665ee;
+}
+.picIntro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.picIntro img{
+    margin-top: -120%;
+}
+.picIntro span{
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
+}
+
+/* hamburger icon */
+.sidebarGo{
+    transform: translate(-277px, 0px);
+    position: absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+    margin-left: 222px;
+}
+/* responsive */
+@media only screen and (max-width: 770px) {
+    .infoContainer{
+        height: 90vh;
+        width: 65vw;    
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .hello{
+        font-size: 55px;
+    }
+    .name{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .about{
+        font-size: 25px;
+    }
+    .moreabout{
+        font-size: 10px;
+        margin-top: 18px;
+    }
+    .devpic img{
+        height: 30vh;
+        margin-top: 0;
+    }
+    .btn{
+        padding: 9px 14px;
+        border-radius: 20px;
+        color: white;
+        background-color: turquoise;
+        font-weight: bold;
+        font-size: 15px;
+        margin: 0 3px;
+        cursor: pointer;
+    }
+    .buttons{
+        margin-top: 22px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .infoContainer{
+        height: 90vh;
+        width: 65vw;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .hello{
+        font-size: 55px;
+    }
+    .name{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .about{
+        font-size: 25px;
+    }
+    .moreabout{
+        font-size: 10px;
+        margin-top: 18px;
+    }
+    .devpic img{
+        height: 30vh;
+        margin-top: 0;
+    }
+    .btn{
+        padding: 9px 14px;
+        border-radius: 20px;
+        color: white;
+        background-color: turquoise;
+        font-weight: bold;
+        font-size: 15px;
+        margin: 0 3px;
+        cursor: pointer;
+    }
+    .buttons{
+        margin-top: 22px;
+}
+}

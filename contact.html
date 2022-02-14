@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanmoy Das - Web Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar sidebarGo">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/intro.html">My Intro</a></li>
+          <li><a href="/Tanmoy's Resume (1).pdf" target="_blank">Resume</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main main-pm">
+      <div class="hamburger">
+        <div class="ham"><img src="ham.png" alt="" width="23px"></div>
+        <div class="cross"><img src="cross.png" alt="" width="23px"></div>
+      </div>
+      <div class="contactform">
+        <h1>Contact Me</h1>
+        <form>
+          <div class="mb-3">
+            <label for="clientEmail" class="form-label">Name</label>
+            <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text"></div>
+          </div>
+          <div class="mb-3">
+            <label for="clientEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="clientPhone" class="form-label">Phone No</label>
+            <input type="phone" class="form-control" id="clientPhone">
+          </div>
+          <div class="form-floating">
+            <label for="floatingTextarea">Tell about your query</label>
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+          </div>
+          <div class="mb-3" id="form-check">
+            <input type="checkbox" class="form-check-input" id="isClient">
+            <label class="form-check-label" for="isClient">I want to work on a project with Me</label>
+          </div>
+          <button type="submit" class="btn btn-sm">Submit</button>
+        </form>
+      </div>
+      <div class="devpic picIntro contactpic">
+        <img src="dev.png" alt="Tanmoy Das">
+        <span>Tanmoy Das</span>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

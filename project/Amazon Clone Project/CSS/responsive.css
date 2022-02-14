@@ -1,0 +1,15 @@
+@media screen and (max-width : 1300px){
+    body{
+        background-color: khaki;
+    }
+    .box2, .box{
+        flex-direction: column;
+    }
+    .logo{
+        justify-content: center;
+        margin: 12px 0;
+    }
+    .box2 ul{
+        justify-content: center;
+    }
+}
